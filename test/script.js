@@ -14,3 +14,19 @@ function draw() {
   histEvent(740,200,"Jan. 1970",true,"Harry’s Dream, a 4,600-foot double lift with 137 chairs opens. ");
   histEvent(820,300,"May, 1986",false,"Beaver Mountain finally gets electricity after running off a generator for 47 years.");
 }
+function drawRef() {
+ textAlign(CENTER);
+  textSize(36);
+  fill(0);
+  text("Beaver Mountain Ski Resort",width/2,70);
+  textSize(20);
+  text("By Tye Oswald",width/2,90);
+  strokeWeight(5);
+  line(50,250,900,250);
+  text("1918",50,280);
+  text("2000",900,280);
+  strokeWeight(3);
+  line(50,240,50,260);
+  line(900,240,900,260);
+ 
+}
