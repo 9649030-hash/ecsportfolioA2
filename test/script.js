@@ -28,5 +28,20 @@ function drawRef() {
   strokeWeight(3);
   line(50,240,50,260);
   line(900,240,900,260);
- 
+}
+function histEvent(int x, int y,String title, boolean top, String detail) {
+  if(top == true){
+  line(x,y,x-15,y+50);
+  }else {
+  line(x,y,x-15,y-50);
+  }
+  rectMode(CENTER);
+  fill(#FA9F46);
+  strokeWeight(2);
+  rect(x,y,100,30,10);
+  fill(0);
+  text(title,x,y+5);
+  if(mouseX > x-50 && mouseX < x+50 && mouseY > y-15 && mouseY < y+15) {
+    text(detail,width/2,350);
+  }
 }
